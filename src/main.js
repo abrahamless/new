@@ -6,7 +6,7 @@ import "./style.css";
 /* =============================
    CONFIG
 ============================= */
-const API_BASE = "https://it4.onrender.com"; // tu API
+const API_BASE = "https://new-yjcm.onrender.com"; // tu API
 /*
 const ENDPOINTS = {
   status: `${API_BASE}/status`,
@@ -161,7 +161,7 @@ function renderLight(state) {
 async function getStatus() {
   try {
     lightError.classList.add("d-none");
-    const res = await fetch("https://it4.onrender.com/status", {
+    const res = await fetch("https://new-yjcm.onrender.com/status", {
       headers: authHeaders(),
     });
     // Suponiendo { status: "on" } / { status: "off" }
@@ -177,7 +177,7 @@ async function getStatus() {
 async function turnOn() {
   try {
     lightError.classList.add("d-none");
-    await fetch("https://it4.onrender.com/turn-on", {
+    await fetch("https://new-yjcm.onrender.com/turn-on", {
       method: "POST",
       headers: authHeaders(),
     });
@@ -192,7 +192,7 @@ async function turnOn() {
 async function turnOff() {
   try {
     lightError.classList.add("d-none");
-    await fetch("https://it4.onrender.com/turn-off", {
+    await fetch("https://new-yjcm.onrender.com/turn-off", {
       method: "POST",
       headers: authHeaders(),
     });
